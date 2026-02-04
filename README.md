@@ -1,6 +1,28 @@
 # flowpathflood : Flow Path Flood Extension Algorithm (Urban areas)
 # Overview
 This algorithm simulates flooding along flow paths that connect depressions in urban areas. These paths typically correspond to primary roads and lanes within the urban fabric.
+## 📊 Data Availability
+
+The example dataset required to run this algorithm (including the 1m resolution LiDAR DEM, Streams, Flow Direction rasters, and Discharge lookup tables) is hosted on Zenodo.
+
+**Dataset DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18484142.svg)](https://doi.org/10.5281/zenodo.18484142)
+
+### Instructions to Setup Data:
+1. **Download** the zip file from [Zenodo (DOI: 10.5281/zenodo.18484142)](https://doi.org/10.5281/zenodo.18484142).
+2. **Create** a folder named `data` in your project root directory.
+3. **Extract** the contents into that folder. Your directory should look like this:
+   ```text
+   /flowpathflood-project
+     ├── data/
+     │    ├── DEM.tif
+     │    ├── fdir.tif
+     │    ├── streams.shp
+     │    └── qmax.csv
+     ├── requirements.txt
+     ├── main.py
+     ├── flowpathflood.py
+     └── README.md
+   ```
 # 🚀 Methodology: The Three Phases
 # Phase1: Preprocessing 
 This phase prepares the raw geospatial data for analysis. It focuses on converting flow direction encodings and breaking the flow path into discrete segments for better accuracy and localized calculation.
