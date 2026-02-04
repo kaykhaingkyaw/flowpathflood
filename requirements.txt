@@ -1,0 +1,15 @@
+# Core Numerical and Geospatial Libraries
+numpy<2.0.0
+pandas
+scipy
+matplotlib
+
+# Geospatial Processing
+rasterio
+geopandas
+shapely
+fiona
+pysheds
+
+# System/Utilities
+scikit-image
